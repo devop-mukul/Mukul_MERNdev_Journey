@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline vs Block vs Inline-Block</title>
+    <style>
+        /* Inline element (default) */
+        .inline {
+            display: inline;
+            background-color: lightblue;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        /* Block element */
+        .block {
+            display: block;
+            background-color: lightgreen;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        /* Inline-block element */
+        .inline-block {
+            display: inline-block;
+            background-color: lightcoral;
+            padding: 10px;
+            margin: 5px;
+            width: 150px;
+            height: 50px;
+        }
+        .navigation-bar {
+            display: flex;
+            background-color:rgb(241, 241, 125);
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Inline vs Block vs Inline-Block Example</h2>
+
+<p>
+    <span class="inline">Inline 1</span>
+    <span class="inline">Inline 2</span>
+</p>
+
+<p>
+    <div class="block">Block 1</div>
+    <div class="block">Block 2</div>
+</p>
+
+<p>
+    <div class="inline-block">Inline-Block 1</div>
+    <div class="inline-block">Inline-Block 2</div>
+</p>
+
+<!-- <nav >
+    <p>
+        <span><a href="">Home</a></span>
+        <span><a href="">Career</a></span>
+        <span><a href="">About</a></span>
+        <span><a href="">Contact</a></span></p>
+</nav> -->
+<!-- Better way to write this is down -->
+
+<nav class="navigation-bar">
+    <ul style="list-style: none; display:flex; gap: 10px; padding:0; margin:0">
+        <li><a href="">Home</a></li>
+        <li><a href="">Career</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>
