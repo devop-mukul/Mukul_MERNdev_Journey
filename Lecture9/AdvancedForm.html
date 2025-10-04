@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <form>
+        <fieldset>
+            <legend><b>Event Registration</b></legend>
+            <label for="Name">Name:</label><br/>
+            <input type="text" name="Name" id="Name" required>
+            <br/>
+
+            <label for="Email">Email:</label><br/>
+            <input type="email" name="Email" id="Email" required>
+            <br/>
+
+            <label for="Phone">Contact:</label><br/>
+            <input type="tel" name="Phone" id="Phone" pattern="[0-9]{5}-[0-9]{5}" required>
+            <br/>        
+
+            <label for="Occupation">Occupation:</label><br/>
+            <select name="Occupation" id="Occupaiton">
+                <option value="Others">Others</option>
+                <option value="Service">Service</option>
+                <option value="Clerk">Clerk</option>
+                <option value="Business">Business</option>
+            </select>
+            <br/><br/>
+
+            <label for="InterestTopic">Topic of Interest:</label><br/>
+
+            <label for="InterestTopic">HTML:</label>
+            <input type="checkbox" name="Interest" id="InterestTopic">
+
+            <label for="InterestTopic">CSS:</label>
+            <input type="checkbox" name="Interest" id="InterestTopic">
+
+            <label for="InterestTopic">Javascript:</label>
+            <input type="checkbox" name="Interest" id="InterestTopic">
+            
+            <br/><br/>
+
+            <label for="Comments">Comments:</label><br/>
+            <textarea name="Comment" id="Comments" cols="30" rows="20" placeholder="Please review..."></textarea>
+
+            <button>Register</button>
+        </fieldset>
+    </form>
+</body>
+</html>
