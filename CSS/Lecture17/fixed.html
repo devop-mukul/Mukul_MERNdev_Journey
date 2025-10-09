@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Position Example</title>
+  <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+
+    /* Fixed Header */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #0073e6;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-size: 1.2em;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+    }
+
+    /* Add some space so content doesn't hide under header */
+    main {
+        height: 8000px;
+        margin-top: 80px;
+        padding: 0 20px;
+    }
+
+    /* Fixed Button */
+    .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #ff5722;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        padding: 15px;
+        cursor: pointer;
+        font-size: 1.2em;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    }
+
+  </style>
+</head>
+<body>
+  <header>My Fixed Navbar</header>
+
+  <main>
+    <p>Scroll down to see the fixed header stay in place.</p>
+    <!-- Repeat content for scrolling -->
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+  </main>
+
+  <button class="back-to-top">⬆</button>
+</body>
+</html>

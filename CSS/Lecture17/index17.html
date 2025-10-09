@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+                border: 2px solid black;
+        }
+        .image2 {
+            /*position: relative;
+            top: 100px;
+            left: 100px;*/
+
+            position: absolute;
+            top: 10px;
+        }
+        .container{
+            height: 5000px;
+            position: relative;
+        }
+        .image4{
+            position: fixed;
+            /*Will show behaviour on entire page */
+        }
+        .image3{
+            top: 100px;
+            position: sticky;
+            /*Will show behaviour only inside parent container */
+        }
+        .box {
+            background-color: aquamarine;
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <img 
+            src="image1.png" alt="image1"
+            width="300px"
+            height="300px"  
+            class="image1"
+        />
+        <img 
+            src="image1.png" alt="image2"
+            width="300px"
+            height="300px"  
+            class="image2"
+        />
+        <img 
+            src="image1.png" alt="image3"
+            width="300px"
+            height="300px"  
+            class="image3"
+        />
+        <img 
+            src="image1.png" alt="image4"
+            width="300px"
+            height="300px"  
+            class="image4"
+        />
+     </div>
+     <div class="box"></div>
+</body>
+</html>
