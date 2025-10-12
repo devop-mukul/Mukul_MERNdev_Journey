@@ -1,0 +1,168 @@
+<!-- 
+🎯 Objective: Test your deep understanding of semantic and structural tags.
+
+✅ Exercise:
+Create a tech blog layout using:
+<header>, <nav>, <article>, <section>, <aside>, <footer>
+Use <figure> and <figcaption> for images.
+
+Add an embedded video and a code snippet using <pre> and <code>.
+
+Bonus:
+Add internal navigation links using id and href="#section".
+
+💡 Extra Knowledge:
+
+Semantic tags improve SEO and Accessibility (important for FAANG).
+
+Use <time datetime="">, <mark>, <abbr>, and <address> — often missed by candidates. -->
+    
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mukul's Techblog</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Mukul's Blog</h1>
+        <p>Your daily dose of Tech Innovation</p>
+    </header>
+
+    <main>
+        <nav>
+            <ul style="display: flex; padding:0; gap:20px; list-style:none; margin:0px;">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Article">Article</a></li>
+                <li><a href="#Tutorial">Tutorial</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <article id="Home"> 
+            <h2>The Future Of Web Development in 2025</h2>
+            <section>
+                <h3>Introduction</h3>
+                    <p>As technology evolves, web development continues to transform rapidly. With the rise of AI-driven design tools, responsive frameworks, and progressive web apps (PWAs), developers are now focusing on user experience and performance like never before.</p>
+                    
+            </section>
+
+            <figure 
+                id="tech-setup-figure" 
+                class="blog-figure" 
+                style="text-align:center; margin:20px 0;" 
+                title="Modern Web Development Setup" 
+                lang="en"
+            >
+                <img 
+                    src="Mukul.jpg" 
+                    alt="Web development workstation with laptop, monitor, and coding tools" 
+                    width="100" 
+                    title="Developer Workstation" 
+                    loading="lazy" 
+                    decoding="async" 
+                    crossorigin="anonymous"
+                >
+                <figcaption 
+                    id="tech-setup-caption" 
+                    class="figure-caption" 
+                    style="font-style:italic; color:#909090;" 
+                    title="Caption for the figure" 
+                    lang="en"
+                >
+                    This setup shows a modern web developer's workstation with essential tools and frameworks.
+                </figcaption>
+            </figure>
+
+            <pre 
+                id="html-snippet-pre" 
+                class="code-block" 
+                style="background-color:#2d2d2d; color:#f8f8f2; padding:15px; border-radius:8px; overflow-x:auto;" 
+                title="HTML Code Example" 
+                lang="en"
+            >
+                <code 
+                    id="html-snippet-code" 
+                    class="html-code" 
+                    style="color:#00ff99;" 
+                    title="HTML5 Semantic Example" 
+                    lang="en"
+                >
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="en"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;title&gt;My First HTML5 Page&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                    &lt;header&gt;Welcome to My Site&lt;/header&gt;
+
+                    &lt;article&gt;
+                        This is my first blog post.
+                    &lt;/article&gt;
+
+                    &lt;footer&gt;© 2025 Mukul Kumar&lt;/footer&gt;
+
+                &lt;/body&gt;
+                &lt;/html&gt;
+                    </code>
+            </pre>
+
+
+
+            <section>
+                <img src="Mukul.jpg" alt="Websetup" width="100px"><br>
+                <video src="videoFile.mp4" width="300px" controls></video>
+            </section>
+
+            <section>
+                <h3>Example: HTML5 Code Snippet</h3>
+                <p>Description: Here’s how you can structure a simple webpage using HTML5 semantic elements.</p>
+
+            </section>
+
+
+
+        </article>
+
+        <p>Code:</p>
+        <pre>
+        <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+                &lt;title&gt;My First HTML5 Page&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;header&gt;Welcome to My Site&lt;/header&gt;
+                &lt;article&gt;This is my first blog post.&lt;/article&gt;
+                &lt;footer&gt;© 2025 Mukul Kumar&lt;/footer&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+            </code>
+        </pre>
+        
+        <aside>
+            <h3>About the Author:</h3>
+            <p>Mukul Kumar is a Computer Science student passionate about Android Development, Web Technologies, and AI innovations.</p>
+            <h4>Recent posts:</h4>
+            <ul>
+                <li>Mastering JavaScript ES6 Features</li>
+                <li>Building Android Apps with Jetpack Compose</li>
+                <li>Exploring AI Integration in Web Platforms</li>
+            </ul>
+        </aside>
+    </main>
+
+
+
+    <footer>
+        &copy; Mukul's Blog. All rights reserved.
+    </footer>
+</body>
+</html>
